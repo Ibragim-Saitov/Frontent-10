@@ -7,7 +7,7 @@ function dostup(){
      if(name < 16){
       console.log('Доступ запрещен')
      } else {
-      console.log(`Привет ${name}`)
+      console.log(`Привет name`)
     }
 }
 //5
