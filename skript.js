@@ -42,10 +42,10 @@ function max(a, b, c,){
 max(0, 20, 10,);
 
 
-function discriminant(a, b, c,){
-  console.log(Math.max(a, b, c,));
+function discriminant(a, b, c){
+  console.log(Math.max(b, 2)-4ac));
 }
-discriminant(5, 5, 5,);
+discriminant(4, 6, 2,);
 
 
 function finish(a, b,){
