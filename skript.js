@@ -4,7 +4,7 @@ let name = 'Ibragim' //string
 const age = 16 //number
 //4
 function dostup(){
-     if(name < 16){
+     if(h < 16){
       console.log('Доступ запрещен')
      } else {
       console.log(`Привет name`)
@@ -36,10 +36,10 @@ console.log(a * a);
 mth();
 
 
-function max(a, b, c,){
-    console.log(Math.max(a, b, c,));
+function dis(a, b, c,){
+    console.log(Math.pow(b, 2) -4 * a * c;
 };
-max(0, 20, 10,);
+dis(5, 7, 3,);
 
 
 function discriminant(a, b, c){
