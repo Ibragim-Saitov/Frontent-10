@@ -42,12 +42,6 @@ function dis(a, b, c,){
 dis(5, 7, 3,);
 
 
-function discriminant(a, b, c){
-  console.log(Math.max(b, 2)-4ac));
-}
-discriminant(4, 6, 2,);
-
-
 function finish(a, b,){
 if(a % 2 === 0 && b % 2 === 0){
   console.log(a * b);
