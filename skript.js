@@ -4,7 +4,7 @@ let name = 'Ibragim' //string
 const age = 16 //number
 //4
 function dostup(){
-     if(h < 16){
+     if(age < 16){
       console.log('Доступ запрещен')
      } else {
       console.log(`Привет name`)
