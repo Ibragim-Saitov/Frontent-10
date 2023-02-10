@@ -1,119 +1,60 @@
     <script>
    
-   //1 Задание
-   
-   let arr = [10, 2762, 0.42, 192, 3, 28, 1125, 2018, 34, 66, 100];
-    
-    arr.forEach((item, index) => {
-        if(item % 2 !== 0){
-            console.log(item);
-        }
-    });
-
-    //2 Задание
-
-    let arrStr = ["lorem ipsum", "javascript", "php", "css", "react", "git", "html", "mysql"];
-
-    arrStr.forEach((item, index) => {
-      if (item % 2 !== 0){
-        console.log(item);
-      }   
-    });
+     720 Bytes
+'use strict';
 
 
-//=====Filter=====//
+// 1 Задание
 
-//1 Задание
-  let num = [1, -3, 5, 6, -7, 8, 9, -11];
-  let num2 = 
-  num.filter((item, index) => {
-     return item < 0;
-  });
-  console.log(num2);
+const arr_1 = [101, 202, 303, 404, 505];
+const arr_2 = [606, 707, 808, 909];
+const superArr = arr_1.concat(arr_2);
+console.log(superArr);
 
-//2 Задание
-  let even = 
-  arr.filter((item, index) => {
-    return item % 2 === 0;
-  });
-  console.log(even);
 
-//3 Задание 
-  let arrString = 
-  arrStr.filter((item, 
-  index) => {
-  return item.length !== 3;
-});
-  console.log(arrString)
+// 2 Задание
 
-//====MAP====//
+console.log(Math.min(...superArr));
 
-//1 Задание
-  let pow = [5, 6, 7, 8, 9];
-  let powRes = 
-  pow.map((item) => {
-    return Math.pow(item, 2);
-  });
-  console.log(powRes);
 
-//2 Задание
-  let arrObj = [
-     {
-        a: 10,
-        b: 5,
-     },
-     {
-        a: 20,
-        b: 22,
-     },
-     {
-        a: 131,
-        b: 55,
-     },
-    ];
-    let arrObjRes = 
-    arrObj.map((item) => {
-      return item.a + item.b;
-    });
-    console.log(arrObjRes);
+// 3 Задание
 
-    //=====Reduce=====//
+const obj = {
+   width: 300,
+   height: 550,
+};
+console.log(obj);
 
-    //1 Задание
-    let arrNum = [-13, 0, 12, 1662, -0,32, -102, -2];
-    let oddNum = arrNum.filter((item) => {
-    return item < 0;
-    });
-    let count = 
-    oddNum.reduce((sum, item) => {
-        return item + sum;
-    }, 0);
-    console.log(count);
+const obj2 = {...obj}
+obj2.area = function (){
+   return this.width * this.height;
+};
+console.log(obj2);
+console.log(obj2.area());
 
-    //2 Задание
-    let newArrObj = [
-    {
-        x: 10,
-        y: 'lorem',
-    },
-    {
-        x: 21,
-        y: 'lorem',
-    },
-    {
-        x: -17,
-        y: 'lorem',
-    },
-    {
-        x: 156,
-        y: 'lorem',
-    }, 
-    ];
-    let summaX =
-    newArrObj.reduce((sum,
-    item) => {
-    return item.x + sum;
-    }, 0);
-    console.log(summaX);
+
+// 4 Задание
+
+function num(...item){
+   let sum = item.reduce((s, i) => {return i + s}, 0)
+   console.log(sum);
+}
+num(5, 800, 10, 30, 5, 300);
+
+
+// 5 Задание
+
+let number = 0;
+while (number < 3) {
+console.log(number);
+number++
+};
+
+
+// 6 Задание
+
+for (let num = 1; num <= 10; num++){
+   console.log(num);
+};
 
     </script>
