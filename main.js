@@ -2,10 +2,10 @@ let ul = document.getElementById('ul');
 
 
 ul.innerHTML = `
-<li>1</li>
-<li>2</li>
-<li>3</li>
-<li>4</li>
+<li>lorem 1</li>
+<li>lorem 2</li>
+<li>lorem 3</li>
+<li>lorem 4</li>
 `;
 
 console.log(ul);
