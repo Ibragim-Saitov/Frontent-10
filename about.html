@@ -1,82 +1,66 @@
 <!DOCTYPE html>
-<html land="en">
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE-enge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+
+<style>
+.first{
+  background-color: rgb(255, 61, 61);
+  width: 300px;
+  height: 300px;
+}
+.second{
+  background-color: rgb(16, 95, 253);
+  width: 300px;
+  height: 300px;
+
+}
+.color{
+  background-color: green;
+  width: 300px;
+  height: 300px;
+}
+.border{
+  border-radius: 100px;
+}
+
+</style>
 </head>
 <body>
 
+  <div class="first" id="first"></div>
+  <div class="second" id="second"></div>
 
 
 
 
-<script>
 
-//1 задание 
 
-function num(n){
+  <script>
+  let first = document.getElementById('first')
+  let second = document.getElementById('second')
 
-    if (n < 10){   
-       console.log('константа меньше 10');
-    } else {
-         console.log('константа не меньше 10');
-}
-}
- num(15);
+  first.addEventListener('click', f)
+  first.addEventListener('click', border)
 
-//3 задание
+  second.onclick = f
 
-    num = (x = 10, y = 7);
+  console.log(first.onclick);
 
-    if (x > y){
-       console.log('x больше чем y');
-    } else {
-        console.log('x не больше чем y');
-}
-
-// четные && и не четные
-
-  let h = 5
-  if(h % 2 === 0){
-    console.log('a')
-  } else{
-    console.log('b')
+  function f() {
+    this.classList.toggle('color')
+  }
+  function border() {
+    first.classList.toggle('border')
   }
 
-//5 задание
-
-let numone = prompt('Введите число')
-let numtwo = prompt('Введите число')
-let numthe = prompt('Введите число')
-
-alert(Math.max(numone, numtwo, numthree))
-
-if(numone >= numtwo & numthree){
-    console.log(numone)
-} else{
-    console.log()
-}
-if(numtwo >= numone & numthree){
-    console.log(numtwo)
-} else {
-    console.log()
-}
-if(numtwo >= numone & numthree){
-    console.log(numtwo)
-} else{
-    console.log()
-}
-if(numthree >= numone & numtwo){
-    console.log(numthree)
-} else{
-    console.log()
-}
-       
-</script>
 
 
+
+  </script>
 </body>
 </html>
